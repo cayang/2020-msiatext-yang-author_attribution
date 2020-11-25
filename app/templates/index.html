@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme Company Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .jumbotron {
+            font-family: "Helvetica", sans-serif;
+            text-align: center;
+            background-color: #000000;
+            color: #fff;
+        }
+
+        .body {
+            font-family: "Helvetica", sans-serif;
+            text-align: center;
+            background-color: #ebdec5;
+            margin-bottom: 24px;
+            margin-top: 24px;
+        }
+
+        .result {
+            font-family: "Helvetica", sans-serif;
+            font-size: 18px;
+            text-align: center;
+            background-color: #fff;
+            margin-bottom: 24px;
+            margin-top: 24px;
+            color: "black"
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Heading -->
+    <div id="heading" class="jumbotron">
+        <h1>Author Prediction Model</h1>
+        <p>Type in Text to Classify</p>
+    </div>
+
+    <!-- Text Input -->
+    <div id="text-input" class="body">
+        <form class="form-inline" id="input_form" action="/add" method="POST">
+            <div class="input-group">
+                <textarea name="input_text" id="input_text" rows="10" cols="50">Input text</textarea>
+                <br><br>
+                <input type="Submit"></input>
+            </div>
+        </form>
+    </div>
+
+    <!-- Result -->
+    <div id="result" class="result">
+        <p>TEXT: <br><i>{{ input }}</i><br><br>
+        <p>PREDICTED AUTHOR: <strong>{{ result }}</strong></p>
+    </div>
+
+</body>
+
+</html>
