@@ -219,11 +219,11 @@ if __name__ == "__main__":
     )
 
     # Save models and objects
-    # file_model_lr_replaced = str(config.HOME) + "/models/model_dbow_lr_replaced.pkl"
-    # file_model_svm_replaced = str(config.HOME) + "/models/model_dbow_svm_replaced.pkl"
+    file_model_lr_replaced = str(config.HOME) + "/models/model_dbow_lr_replaced.pkl"
+    file_model_svm_replaced = str(config.HOME) + "/models/model_dbow_svm_replaced.pkl"
 
-    # pkl.dump(clf_lr_replaced, open(file_model_lr_replaced, "wb"))
-    # pkl.dump(clf_svm_replaced, open(file_model_svm_replaced, "wb"))
+    pkl.dump(clf_lr_replaced, open(file_model_lr_replaced, "wb"))
+    pkl.dump(clf_svm_replaced, open(file_model_svm_replaced, "wb"))
 
     # Generate confusion matrices and graphs
     if config.CREATE_VIZ:
